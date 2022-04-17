@@ -100,7 +100,6 @@ public class HlavniProgram {
 
         zofka.move(80);
         zofka.turnLeft(90);
-
     }
     private void Paprsek(Turtle zofka, int uhel) {
         zofka.turnRight(90);
