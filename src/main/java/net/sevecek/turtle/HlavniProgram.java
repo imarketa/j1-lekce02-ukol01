@@ -2,12 +2,16 @@ package net.sevecek.turtle;
 
 import net.sevecek.turtle.engine.*;
 
+import java.awt.*;
+
 public class HlavniProgram {
 
     public void main(String[] args) {
         Turtle zofka;
 
         zofka = new Turtle();
+
+        zofka.setPenColor(Color.magenta);
 
         //start přesun k domečku
         zofka.penUp();
@@ -59,9 +63,9 @@ public class HlavniProgram {
 
         //přesun ke jménu
         zofka.penUp();
-        zofka.turnLeft(35);
+        zofka.turnLeft(90);
         zofka.move(850);
-        zofka.turnRight(165);
+        zofka.turnRight(180);
 
         //jméno
         //M
@@ -98,16 +102,24 @@ public class HlavniProgram {
         zofka.turnLeft(90);
 
     }
-
+    private void Paprsek(Turtle zofka, int uhel) {
+        zofka.turnRight(90);
+        zofka.move(20);
+        zofka.penUp();
+        zofka.turnLeft(180);
+        zofka.move(20);
+        zofka.turnRight(90);
+        zofka.penDown();
+}
 
     private void Slunce(Turtle zofka) {
-        for (int i = 0; 50 > i; i++) {
-            zofka.penDown();
-            zofka.move(6);
-            zofka.turnLeft(8);
+        zofka.penDown();
+        for (int i = 0; 12 > i; i++) {
+            zofka.move(20);
+            zofka.turnLeft(30);
+           Paprsek(zofka,30*i);
         }
     }
-
 
 
     private void NakresliPrasatko(Turtle zofka) {
