@@ -13,11 +13,11 @@ public class HlavniProgram {
 
         zofka.setPenColor(Color.magenta);
 
-      //start přesun k domečku
+        //start přesun k domečku
         zofka.penUp();
         zofka.turnLeft(90);
         zofka.move(350);
-        zofka.turnLeft (90);
+        zofka.turnLeft(90);
         zofka.move(450);
         zofka.turnRight(180);
 
@@ -150,14 +150,14 @@ public class HlavniProgram {
         zofka.move(20);
         zofka.turnRight(90);
         zofka.penDown();
-}
+    }
 
     private void nakresliSlunce(Turtle zofka) {
         zofka.penDown();
         for (int i = 0; 12 > i; i++) {
             zofka.move(20);
             zofka.turnLeft(30);
-           paprsek(zofka,30*i);
+            paprsek(zofka, 30 * i);
         }
     }
 
